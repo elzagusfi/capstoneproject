@@ -1,0 +1,35 @@
+{
+    "totalRevenue": 20512,
+    "quantity": 9481,
+    "salesByCategory": {
+      "labels": ["Food", "Carbonated", "Non Carbonated", "Water"],
+      "datasets": [
+        {"label": "GuttenPlans", "data": [2000, 1500, 1000, 500], "backgroundColor": "blue"},
+        {"label": "EB Public Library", "data": [1000, 200, 300, 400], "backgroundColor": "red"},
+        {"label": "Brunswick Sq Mall", "data": [3000, 1000, 200, 100], "backgroundColor": "green"},
+        {"label": "Earle Asphalt", "data": [500, 100, 200, 300], "backgroundColor": "pink"}
+      ]
+    },
+    "avgProductPrice": {
+      "labels": ["Non Carbonated", "Carbonated", "Water", "Food"],
+      "data": [2.5, 2.0, 1.5, 1.5]
+    },
+    "salesByLocation": {
+      "labels": ["GuttenPlans", "EB Public Library", "Brunswick Sq Mall", "Earle Asphalt"],
+      "data": [38, 35.3, 17.2, 9.4],
+      "backgroundColor": ["blue", "red", "green", "orange"]
+    },
+    "salesByActiveMachine": {
+      "labels": ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"],
+      "datasets": [
+        {"label": "GuttenPlans x1367", "data": [500, 700, 800, 900, 600, 700, 800, 900, 600, 700, 800, 900], "borderColor": "blue"},
+        {"label": "EB Public Library x1380", "data": [300, 400, 500, 600, 700, 800, 500, 400, 500, 600, 700, 800], "borderColor": "red"},
+        {"label": "Earle Asphalt x1371", "data": [100, 200, 300, 400, 300, 200, 100, 200, 300, 400, 300, 200], "borderColor": "pink"}
+      ]
+    },
+    "mostFavoriteProduct": {
+      "labels": ["Monster Energy Original", "Coca Cola - Zero Sugar", "Red Bull - Original", "Poland Springs Water", "KitKat - Crisp Wafers", "Coca Cola - Regular", "Wonderful Pistachios - Variety", "Sunkist Soda - Orange"],
+      "data": [1500, 1400, 1300, 1200, 1100, 1000, 900, 800]
+    }
+  }
+  

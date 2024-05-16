@@ -1,0 +1,37 @@
+<div id="sales-vending-machine">
+    <h1>Sales Vending Machine</h1>
+    <div class="summary">
+        <div class="summary-item">
+            <h2>Total Revenue</h2>
+            <p id="total-revenue">$0</p>
+        </div>
+        <div class="summary-item">
+            <h2>Quantity</h2>
+            <p id="total-quantity">0</p>
+        </div>
+    </div>
+    <div class="charts">
+        <div class="chart-container">
+            <h3>Sales Based on Product Category</h3>
+            <canvas id="categoryChart"></canvas>
+        </div>
+        <div class="chart-container">
+            <h3>AVG Product Price</h3>
+            <canvas id="priceChart"></canvas>
+        </div>
+        <div class="chart-container">
+            <h3>Sales Based on Location</h3>
+            <canvas id="locationChart"></canvas>
+        </div>
+        <div class="chart-container">
+            <h3>Sales Based on Active Machine</h3>
+            <canvas id="machineChart"></canvas>
+        </div>
+        <div class="chart-container">
+            <h3>The Most Favorite Product</h3>
+            <canvas id="favProductChart"></canvas>
+        </div>
+    </div>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script src="scripts.js"></script>

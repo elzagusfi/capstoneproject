@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sales Vending Machine Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="wrapper">
+        <nav class="sidebar">
+            <ul>
+                <h1 style="color:white">Team 1 Project</h1>
+                <li><a href="#" id="dashboard-link">Home</a></li>
+                <li><a href="#" id="dashboard-link">About</a></li>
+                <li><a href="#" id="dashboard-link">Dashboard</a></li>
+                <li><a href="#" id="dashboard-link">Team</a></li>
+                <li><a href="#" id="dashboard-link">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="main-content">
+            <div id="dashboard" class="content">
+                <div class="container">
+                    <h1>Sales Vending Machine</h1>
+                    <div class="summary">
+                        <div class="summary-item">
+                            <h2>Total Revenue</h2>
+                            <p id="total-revenue">$0</p>
+                        </div>
+                        <div class="summary-item">
+                            <h2>Quantity</h2>
+                            <p id="total-quantity">0</p>
+                        </div>
+                    </div>
+                    <div class="charts">
+                        <div class="chart-container">
+                            <h3>Sales Based on Product Category</h3>
+                            <canvas id="categoryChart"></canvas>
+                        </div>
+                        <div class="chart-container">
+                            <h3>AVG Product Price</h3>
+                            <canvas id="priceChart"></canvas>
+                        </div>
+                        <div class="chart-container">
+                            <h3>Sales Based on Location</h3>
+                            <canvas id="locationChart"></canvas>
+                        </div>
+                        <div class="chart-container">
+                            <h3>Sales Based on Active Machine</h3>
+                            <canvas id="machineChart"></canvas>
+                        </div>
+                        <div class="chart-container">
+                            <h3>The Most Favorite Product</h3>
+                            <canvas id="favProductChart"></canvas>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="scripts.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const dashboardLink = document.getElementById('dashboard-link');
+            const dashboard = document.getElementById('dashboard');
+            
+            dashboardLink.addEventListener('click', (e) => {
+                e.preventDefault();
+                dashboard.style.display = 'block';
+            });
+        });
+    </script>
+</body>
+</html>
